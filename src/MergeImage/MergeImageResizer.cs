@@ -58,7 +58,7 @@ namespace MergeImage
                             plusIcon = "plus-super-small.png";
                         }
 
-                        Bitmap plus = new Bitmap(String.Concat(AppDomain.CurrentDomain.BaseDirectory, plusIcon));
+                        Bitmap plus = new Bitmap(String.Concat(AppDomain.CurrentDomain.BaseDirectory.Replace(@"bin\Debug\", @"files\"), plusIcon));
 
                         x = (finalImage.Width / 2) - (plus.Width / 2);
                         y = (finalImage.Height / 2) - ((plus.Height / 2));

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Net;
+using System.Reflection;
 
 namespace MergeImage
 {
@@ -10,7 +11,7 @@ namespace MergeImage
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Options size?\r\n[1] 48x48\r\n[2] 120x120\r\n[3] 180x180\r\n[4] 400x400");
+            Console.WriteLine("Options size?\r\n[1] 48x48\r\n[2] 120x120\r\n[3] 180x180\r\n[4] 400x400");            
 
             int optionSize = Convert.ToInt32(Console.ReadLine());
 
